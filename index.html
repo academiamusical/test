@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetas Saludables Para Congelar</title>
+
+  <!-- PRECARGA CRÍTICA -->
+  <link rel="preconnect" href="https://res.cloudinary.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- FUENTES -->
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap" />
+  </noscript>
+
+  <!-- META PIXEL -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = [];
+      t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '940933878998182');
+    fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=940933878998182&ev=PageView&noscript=1" />
+  </noscript>
+
+  <style>
+    :root {
+      --verde: #16a34a;
+      --verde-oscuro: #14532d;
+      --verde-claro: #22c55e;
+      --crema: #fefce8;
+      --naranja: #ea580c;
+      --texto: #1c1917;
+      --gris: #57534e;
+      --fondo: #0f1a10;
+      --card: #162018;
+      --card2: #1a2b1c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--fondo);
+      color: #e7efe8;
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+
+    .text-gradient {
+      background: linear-gradient(135deg, #22c55e, #86efac, #4ade80);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .text-gradient-fire {
+      background: linear-gradient(135deg, #f97316, #ef4444, #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-primary {
+      display: block;
+      width: 100%;
+      padding: 20px 32px;
+      background: linear-gradient(135deg, #16a34a, #22c55e);
+      color: white;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(34,197,94,0.35);
+      transition: all 0.2s ease;
+      animation: pulse-green 2s infinite;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 40px rgba(34,197,94,0.5);
+    }
+
+    @keyframes pulse-green {
+      0%, 100% { box-shadow: 0 10px 30px rgba(34,197,94,0.35); }
+      50% { box-shadow: 0 10px 40px rgba(34,197,94,0.6); }
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .badge-green {
+      background: rgba(34,197,94,0.15);
+      border: 1px solid rgba(34,197,94,0.4);
+      color: #86efac;
+    }
+
+    .badge-red {
+      background: rgba(239,68,68,0.15);
+      border: 1px solid rgba(239,68,68,0.4);
+      color: #fca5a5;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 24px;
+      transition: border-color 0.2s;
+    }
+
+    .card:hover { border-color: rgba(34,197,94,0.3); }
+
+    .card-danger:hover { border-color: rgba(239,68,68,0.4); }
+
+    .section-divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* BANNER TOP */
+    .banner-top {
+      width: 100%;
+      background: linear-gradient(90deg, #dc2626, #b91c1c, #dc2626);
+      color: white;
+      text-align: center;
+      padding: 10px 16px;
+      font-weight: 800;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(220,38,38,0.5);
+    }
+
+    /* CARRUSEL */
+    .c-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: all 0.6s ease; }
+    .c-slide.active { opacity: 1; transform: translateX(0); z-index: 10; }
+    .c-slide.hidden-right { opacity: 0; transform: translateX(100%); z-index: 1; }
+    .c-slide.hidden-left { opacity: 0; transform: translateX(-100%); z-index: 1; }
+
+    /* COUNTDOWN */
+    .countdown-timer {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 900;
+      font-size: 4rem;
+      background: linear-gradient(135deg, #ef4444, #f97316, #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: pulse-opacity 1s infinite;
+    }
+
+    @keyframes pulse-opacity {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.75; }
+    }
+
+    /* FAQ */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+      padding: 0 20px;
+      color: #a8b5a9;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .faq-item.active .faq-answer { max-height: 200px; padding: 0 20px 20px; }
+    .faq-icon { transition: transform 0.3s; }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+
+    /* ESTRELLAS */
+    .stars { color: #fbbf24; font-size: 1rem; letter-spacing: 2px; }
+
+    /* TESTIMONIALS SECTION (LIGHT THEME) */
+    .section-testimonials {
+      padding: 80px 20px;
+      background-color: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .testimonial-title {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 48px;
+      text-align: center;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 768px) {
+      .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .testimonial-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .testimonial-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 28px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+    }
+
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .testimonial-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #e2e8f0;
+    }
+
+    .testimonial-info {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.3;
+    }
+
+    .testimonial-name {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .testimonial-location {
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+
+    .testimonial-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #475569;
+      margin-bottom: 16px;
+      flex-grow: 1;
+      text-align: left;
+    }
+
+    .testimonial-stars {
+      color: #f59e0b;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      text-align: left;
+    }
+
+    /* UTILIDADES */
+    .max-w-4xl { max-width: 56rem; margin-left: auto; margin-right: auto; }
+    .max-w-3xl { max-width: 48rem; margin-left: auto; margin-right: auto; }
+    .max-w-2xl { max-width: 42rem; margin-left: auto; margin-right: auto; }
+    .text-center { text-align: center; }
+    .line-through { text-decoration: line-through; }
+
+    /* SCROLL REVEAL */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.55s ease, transform 0.55s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* RESPONSIVE */
+    @media (min-width: 768px) {
+      .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: center; }
+      .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+      .grid-2-auto { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+      .countdown-timer { font-size: 5.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======================================
+       BANNER TOP — URGENCIA INMEDIATA
+  ======================================= -->
+  <div class="banner-top">
+    <span style="animation: pulse-opacity 1s infinite; display:inline-block;">⚠️</span>
+    &nbsp;OFERTA ESPECIAL: EL PRECIO SUBE Y LOS BONOS DESAPARECEN PRONTO&nbsp;
+    <span style="animation: pulse-opacity 1s infinite; display:inline-block;">⚠️</span>
+  </div>
+
+
+  <!-- ======================================
+       SECCIÓN 1 — HERO / GANCHO
+       Sin botón de compra — solo atención
+  ======================================= -->
+  <header style="padding: 48px 20px 64px; background: linear-gradient(180deg, #0a130b 0%, var(--fondo) 100%); position: relative; overflow: hidden;">
+
+    <!-- Luz de fondo decorativa -->
+    <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:600px; height:300px; background:rgba(34,197,94,0.05); border-radius:50%; filter:blur(80px); pointer-events:none;"></div>
+
+    <div class="max-w-4xl text-center" style="position:relative; z-index:2;">
+
+      <div class="reveal" style="margin-bottom:20px;">
+        <span class="badge badge-green">
+          <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse-opacity 1s infinite;display:inline-block;"></span>
+          Para mujeres que quieren comer sano sin perder horas en la cocina
+        </span>
+      </div>
+
+      <h1 class="reveal" style="font-size: clamp(2.2rem, 6vw, 4.2rem); font-weight: 900; line-height: 1.1; margin-bottom: 24px; color: white;">
+        Cocina Una Sola Vez<br />
+        y Come <span class="text-gradient">Saludable Toda La Semana</span><br />
+        Sin Pasar Horas En La Cocina
+      </h1>
+
+      <p class="reveal" style="font-size: clamp(1rem, 2.3vw, 1.25rem); color: #a8b5a9; max-width: 720px; margin: 0 auto 40px; line-height: 1.6;">
+        Sin frustrarte pensando qué cocinar cada noche al llegar cansada, sin sufrir comiendo recetas aguadas y sin sabor al descongelarlas, y <strong style="color: #e7efe8;">sin tirar comida podrida a la basura ni gastar una fortuna en comida a domicilio todos los días.</strong>
+      </p>
+
+      <!-- Video hero vertical -->
+      <div class="reveal" style="position:relative; max-width: 340px; margin: 0 auto; border-radius: 20px; overflow: hidden; border: 2px solid rgba(34,197,94,0.3); box-shadow: 0 0 60px rgba(34,197,94,0.15);">
+        <video
+          src="https://res.cloudinary.com/daijidw3t/video/upload/v1781823305/video_hero_xas26j.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover;"
+        ></video>
+        <div style="position:absolute; top:12px; right:12px; background:rgba(0,0,0,0.75); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.1); border-radius:999px; padding:6px 14px; font-size:0.75rem; font-weight:700; color:white; display:flex; align-items:center; gap:6px; z-index: 10;">
+          ⭐ +100 Recetas Reales
+        </div>
+        <div style="position:absolute; bottom:12px; right:12px; background:rgba(0,0,0,0.75); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.1); border-radius:999px; padding:6px 14px; font-size:0.7rem; font-weight:700; color:white; z-index: 10; letter-spacing:0.02em;">
+          Sacas - descongelas - comes
+        </div>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="reveal" style="margin-top: 32px; color: #4b5563;">
+        <p style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em; font-weight:700; margin-bottom:8px;">Desliza para ver más</p>
+        <svg style="margin:0 auto; display:block; animation: bounce 1.5s infinite;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+      </div>
+
+    </div>
+  </header>
+  <style>
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+  </style>
+
+
+  <!-- ======================================
+       SECCIÓN 2 — AGITACIÓN DEL PROBLEMA
+  ======================================= -->
+  <section style="padding: 80px 20px; background: #0b1510; border-top: 1px solid rgba(239,68,68,0.2); border-bottom: 1px solid rgba(239,68,68,0.2);">
+    <div class="max-w-4xl">
+
+      <div class="text-center reveal" style="margin-bottom: 48px;">
+        <h2 style="font-size: clamp(1.8rem, 4.5vw, 3rem); font-weight: 800; color: white; margin-bottom: 12px;">
+          La trampa de querer comer sano<br />
+          <span style="color: #ef4444;">cuando la vida no para.</span>
+        </h2>
+      </div>
+
+      <div class="grid-3" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:20px;">
+
+        <div class="card card-danger reveal">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.6rem;">⏰</div>
+          <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:8px;">El tiempo nunca alcanza</h3>
+          <p style="color:#9ca3af;font-size:0.88rem;line-height:1.6;">Llegas cansada del trabajo, los niños esperan, y lo único que se te ocurre es pedir a domicilio otra vez. Y después el cargo de consciencia.</p>
+        </div>
+
+        <div class="card card-danger reveal">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.6rem;">💸</div>
+          <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:8px;">La comida sana sale cara</h3>
+          <p style="color:#9ca3af;font-size:0.88rem;line-height:1.6;">Ingredientes que se pudren en la nevera porque no sabes cómo combinarlos. Plata tirada, frustración garantizada.</p>
+        </div>
+
+        <div class="card card-danger reveal">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(239,68,68,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.6rem;">😩</div>
+          <h3 style="font-size:1.1rem;font-weight:700;color:white;margin-bottom:8px;">Siempre el mismo ciclo</h3>
+          <p style="color:#9ca3af;font-size:0.88rem;line-height:1.6;">Lunes con energía, martes a medias, miércoles ya pediste pizza. El congelador vacío es el enemigo silencioso de tu alimentación.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================
+       SECCIÓN 3 — LA SOLUCIÓN + CARRUSEL
+  ======================================= -->
+  <section style="padding: 80px 20px; background: var(--fondo);">
+    <div class="max-w-4xl">
+
+      <div class="text-center reveal" style="margin-bottom: 56px;">
+        <span class="badge badge-green" style="margin-bottom:16px;">✨ El sistema que cambia todo</span>
+        <h2 style="font-size: clamp(1.8rem, 4.5vw, 3.2rem); font-weight: 900; color: white; margin-bottom: 16px;">
+          <span class="text-gradient">+100 Recetas Saludables</span><br />
+          Listas Para Congelar y Disfrutar
+        </h2>
+        <p style="color:#a8b5a9; font-size:1.05rem; max-width:560px; margin:0 auto; line-height:1.6;">
+          Cocina en una tarde del fin de semana y ten comida sana, rica y lista para toda la semana — solo saca del congelador y calienta.
+        </p>
+      </div>
+
+      <!-- Carrusel de recetas -->
+      <div class="reveal" style="max-width: 520px; margin: 0 auto; border-radius: 24px; overflow: hidden; border: 2px solid rgba(34,197,94,0.25); background: var(--card); box-shadow: 0 0 60px rgba(34,197,94,0.12); padding: 8px;">
+        <div style="position:relative; aspect-ratio:4/5; border-radius:18px; overflow:hidden; background:#000;">
+
+          <img class="c-slide active" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775709/image_1_svobk7.webp" alt="Receta 1" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775698/image_2_ljp7uf.webp" alt="Receta 2" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775703/image_3_veaag2.webp" alt="Receta 3" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775704/image_4_i1a0sx.webp" alt="Receta 4" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775705/image_5_r7ck4p.webp" alt="Receta 5" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775707/image_6_b2hmjf.webp" alt="Receta 6" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775708/image_7_mf5s45.webp" alt="Receta 7" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775699/image_8_m6lzwr.webp" alt="Receta 8" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775700/image_9_cbc1ym.webp" alt="Receta 9" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775702/image_10_n38kc5.webp" alt="Receta 10" />
+          <img class="c-slide hidden-right" src="https://res.cloudinary.com/daijidw3t/image/upload/v1780775711/image_11_c1n9kv.webp" alt="Receta 11" />
+
+          <!-- Controles -->
+          <button onclick="moveCarousel(-1)" style="position:absolute;left:12px;top:50%;transform:translateY(-50%);z-index:30;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,0.2);color:white;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#16a34a'" onmouseout="this.style.background='rgba(0,0,0,0.6)'">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button onclick="moveCarousel(1)" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);z-index:30;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,0.6);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,0.2);color:white;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='#16a34a'" onmouseout="this.style.background='rgba(0,0,0,0.6)'">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          <!-- Badge inferior -->
+          <div style="position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:30;padding:6px 20px;background:rgba(0,0,0,0.8);backdrop-filter:blur(8px);border-radius:999px;border:1px solid rgba(255,255,255,0.1);font-size:0.8rem;font-weight:700;white-space:nowrap;display:flex;align-items:center;gap:8px;">
+            <span style="width:8px;height:8px;border-radius:50%;background:#22c55e;animation:pulse-opacity 1s infinite;display:inline-block;"></span>
+            Recetas 100% Reales
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center reveal" style="margin-top:16px;font-size:0.85rem;color:#6b7280;font-style:italic;">+100 recetas variadas, saludables y deliciosas — todas aptas para congelar.</p>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================
+       SECCIÓN 4 — DEMOSTRACIÓN + PRIMER CTA
+       (Comprador impulsivo ya está listo)
+  ======================================= -->
+  <section style="padding: 80px 20px; background: #0b1510; border-top: 1px solid rgba(34,197,94,0.15); border-bottom: 1px solid rgba(34,197,94,0.15); position:relative; overflow:hidden;">
+
+    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:300px;background:rgba(34,197,94,0.04);border-radius:50%;filter:blur(80px);pointer-events:none;"></div>
+
+    <div class="max-w-4xl" style="position:relative;z-index:2;">
+      <div class="grid-2">
+
+        <!-- Imagen secundaria -->
+        <div class="reveal">
+          <div style="position:relative;border-radius:20px;overflow:hidden;border:2px solid rgba(34,197,94,0.3);box-shadow:0 0 40px rgba(34,197,94,0.1);aspect-ratio:4/5;">
+            <div style="position:absolute;top:12px;left:12px;z-index:20;padding:6px 14px;background:rgba(0,0,0,0.8);backdrop-filter:blur(4px);border:1px solid rgba(34,197,94,0.5);border-radius:999px;font-size:0.72rem;font-weight:700;color:white;display:flex;align-items:center;gap:6px;">
+              <span style="width:6px;height:6px;border-radius:50%;background:#22c55e;animation:pulse-opacity 1s infinite;display:inline-block;"></span>
+              Resultado Real
+            </div>
+            <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1780766463/Image_2_g6wpcs.webp" alt="Resultado real" style="width:100%;height:100%;object-fit:cover;" />
+          </div>
+        </div>
+
+        <!-- Copy + primer CTA -->
+        <div class="reveal">
+          <span class="badge badge-green" style="margin-bottom:20px;">🥦 Método Freezer Inteligente</span>
+
+          <h2 style="font-size:clamp(1.7rem,4vw,2.6rem);font-weight:900;color:white;line-height:1.15;margin-bottom:20px;">
+            Cocina En Batch,<br />
+            <span class="text-gradient">Come Sano Sin Pensar.</span>
+          </h2>
+
+          <p style="color:#a8b5a9;font-size:0.97rem;line-height:1.7;margin-bottom:24px;">
+            Dedica una sola tarde de tu semana y ten el congelador lleno de comidas nutritivas, ricas y listas para servir. Sin químicos, sin procesados, sin estrés.
+          </p>
+
+          <!-- Lista de beneficios técnicos -->
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;margin-bottom:32px;background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:16px;padding:20px;">
+
+            <li style="display:flex;align-items:flex-start;gap:14px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.15);display:flex;align-items:center;justify-content:center;color:#22c55e;font-weight:900;font-size:1rem;flex-shrink:0;">1</div>
+              <div>
+                <p style="color:white;font-weight:700;margin-bottom:2px;">Conserva sabor y nutrientes</p>
+                <p style="color:#9ca3af;font-size:0.83rem;">Técnicas de congelado que mantienen la textura y el valor nutricional hasta 3 meses.</p>
+              </div>
+            </li>
+
+            <li style="display:flex;align-items:flex-start;gap:14px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.15);display:flex;align-items:center;justify-content:center;color:#22c55e;font-weight:900;font-size:1rem;flex-shrink:0;">2</div>
+              <div>
+                <p style="color:white;font-weight:700;margin-bottom:2px;">Sin recipientes caros</p>
+                <p style="color:#9ca3af;font-size:0.83rem;">Funciona con lo que ya tienes en casa. Ningún gadget especial.</p>
+              </div>
+            </li>
+
+            <li style="display:flex;align-items:flex-start;gap:14px;">
+              <div style="width:36px;height:36px;border-radius:50%;background:rgba(34,197,94,0.15);display:flex;align-items:center;justify-content:center;color:#22c55e;font-weight:900;font-size:1rem;flex-shrink:0;">3</div>
+              <div>
+                <p style="color:white;font-weight:700;margin-bottom:2px;">Variedad real, no repetición</p>
+                <p style="color:#9ca3af;font-size:0.83rem;">+100 opciones para que nunca comas lo mismo dos días seguidos.</p>
+              </div>
+            </li>
+
+          </ul>
+
+          <!-- ⭐ PRIMER CTA — Comprador impulsivo -->
+          <a href="#ofertas" class="btn-primary" id="cta-1">
+            🛒 Quiero Mis Recetas Ahora — $6.95 USD
+          </a>
+          <p style="text-align:center;font-size:0.75rem;color:#6b7280;margin-top:10px;font-style:italic;">Acceso inmediato · Pago único · Garantía 7 días</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================
+       SECCIÓN 5 — CARACTERÍSTICAS
+  ======================================= -->
+  <section style="padding: 80px 20px; background: var(--fondo);">
+    <div class="max-w-3xl">
+
+      <p class="text-center reveal" style="font-size:clamp(1.1rem,3vw,1.5rem);color:#d1fae5;font-weight:700;margin-bottom:40px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.5;">
+        Todo lo que necesitas para transformar tu cocina — <strong style="color:#22c55e;">incluido en un solo recetario.</strong>
+      </p>
+
+      <div style="display:flex;flex-direction:column;gap:14px;">
+
+        <div class="card reveal" style="display:flex;align-items:flex-start;gap:16px;">
+          <span style="font-size:2rem;flex-shrink:0;">🥗</span>
+          <div>
+            <p style="font-weight:800;color:white;font-size:1rem;margin-bottom:4px;">Recetas balanceadas para toda la familia</p>
+            <p style="color:#9ca3af;font-size:0.85rem;">Desayunos, almuerzos, cenas y snacks — todo apto para congelar sin perder sabor.</p>
+          </div>
+        </div>
+
+        <div class="card reveal" style="display:flex;align-items:flex-start;gap:16px;">
+          <span style="font-size:2rem;flex-shrink:0;">⚡</span>
+          <div>
+            <p style="font-weight:800;color:white;font-size:1rem;margin-bottom:4px;">Listo para usar hoy mismo</p>
+            <p style="color:#9ca3af;font-size:0.85rem;">Acceso digital inmediato. Descarga y empieza a cocinar esta misma tarde.</p>
+          </div>
+        </div>
+
+        <div class="card reveal" style="display:flex;align-items:flex-start;gap:16px;">
+          <span style="font-size:2rem;flex-shrink:0;">🕐</span>
+          <div>
+            <p style="font-weight:800;color:white;font-size:1rem;margin-bottom:4px;">Ahorra hasta 5 horas de cocina por semana</p>
+            <p style="color:#9ca3af;font-size:0.85rem;">Batch cooking organizado: qué cocinar, cuándo congelar, cómo descongelar. Todo explicado paso a paso.</p>
+          </div>
+        </div>
+
+        <div class="card reveal" style="display:flex;align-items:flex-start;gap:16px;">
+          <span style="font-size:2rem;flex-shrink:0;">💰</span>
+          <div>
+            <p style="font-weight:800;color:white;font-size:1rem;margin-bottom:4px;">Reduce el desperdicio y el gasto en comida</p>
+            <p style="color:#9ca3af;font-size:0.85rem;">Lista de compras optimizada incluida. Sin ingredientes que se pudran en la nevera.</p>
+          </div>
+        </div>
+
+        <div class="card reveal" style="display:flex;align-items:flex-start;gap:16px;">
+          <span style="font-size:2rem;flex-shrink:0;">🧊</span>
+          <div>
+            <p style="font-weight:800;color:white;font-size:1rem;margin-bottom:4px;">Técnicas correctas de congelado y descongelado</p>
+            <p style="color:#9ca3af;font-size:0.85rem;">Nada de comida aguada, sin textura o con mal sabor. Aprende el método correcto.</p>
+          </div>
+        </div>
+
+        <div class="card reveal" style="display:flex;align-items:flex-start;gap:16px;">
+          <span style="font-size:2rem;flex-shrink:0;">📱</span>
+          <div>
+            <p style="font-weight:800;color:white;font-size:1rem;margin-bottom:4px;">Acceso desde cualquier dispositivo, para siempre</p>
+            <p style="color:#9ca3af;font-size:0.85rem;">Celular, tablet o computador. Sin caducidad. Tuyo para siempre.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================
+       SECCIÓN 6 — PRUEBA SOCIAL
+  ======================================= -->
+  <section style="padding: 80px 20px 40px; background: #0b1510; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="max-w-4xl">
+
+      <!-- Contadores -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:24px;text-align:center;">
+
+        <div class="reveal">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:900;color:white;"><span class="count-up" data-target="100">0</span>+</div>
+          <div style="color:#22c55e;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;">Recetas</div>
+        </div>
+
+        <div class="reveal">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:900;color:white;"><span class="count-up" data-target="3">0</span> meses</div>
+          <div style="color:#22c55e;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;">De conservación</div>
+        </div>
+
+        <div class="reveal">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:900;color:white;"><span class="count-up" data-target="5">0</span>h+</div>
+          <div style="color:#22c55e;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;">Ahorro semanal</div>
+        </div>
+
+        <div class="reveal">
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:900;color:white;">7</div>
+          <div style="color:#22c55e;font-weight:700;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.08em;">Días de garantía</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================
+       SECCIÓN 6.5 — TESTIMONIOS (LIGHT THEME)
+  ======================================= -->
+  <section class="section-testimonials">
+    <div class="max-w-4xl">
+
+      <!-- Testimonios -->
+      <h2 class="testimonial-title reveal">
+        💬 Lo que dicen quienes ya lo tienen
+      </h2>
+
+      <div class="testimonial-grid">
+        <!-- Testimonio 1 -->
+        <div class="reveal testimonial-card">
+          <div>
+            <div class="testimonial-header">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/c_fill,g_face,w_150,h_150/v1780779961/Captura_de_pantalla_2026-06-06_160135_hmwjuc.png" alt="Andrea García" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <h3 class="testimonial-name">Andrea García</h3>
+                <span class="testimonial-location">Madrid, ES</span>
+              </div>
+            </div>
+            <p class="testimonial-text">Preparé pollo al limón, lo congelé y me duró toda la semana. Sabía como recién hecho, incluso recién sacado del congelador.</p>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+
+        <!-- Testimonio 2 -->
+        <div class="reveal testimonial-card">
+          <div>
+            <div class="testimonial-header">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/c_fill,g_face,w_150,h_150/v1780779962/Captura_de_pantalla_2026-06-06_160200_gezqdv.png" alt="Camila Rojas" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <h3 class="testimonial-name">Camila Rojas</h3>
+                <span class="testimonial-location">Bogotá, CO</span>
+              </div>
+            </div>
+            <p class="testimonial-text">El sistema de preparación de comidas me cambió la vida. Salgo del trabajo y la cena ya está lista. Cero estrés.</p>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+
+        <!-- Testimonio 3 -->
+        <div class="reveal testimonial-card">
+          <div>
+            <div class="testimonial-header">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/c_fill,g_face,w_150,h_150/v1780779964/Captura_de_pantalla_2026-06-06_160219_ek9qth.png" alt="Sofía López" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <h3 class="testimonial-name">Sofía López</h3>
+                <span class="testimonial-location">CDMX, MX</span>
+              </div>
+            </div>
+            <p class="testimonial-text">Pensé que sería difícil sin tener experiencia en la cocina, pero las recetas son súper sencillas. Lo preparé todo el domingo.</p>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+
+        <!-- Testimonio 4 -->
+        <div class="reveal testimonial-card">
+          <div>
+            <div class="testimonial-header">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/c_fill,g_face,w_150,h_150/v1780779966/Captura_de_pantalla_2026-06-06_160502_bngrfb.png" alt="Valentina Silva" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <h3 class="testimonial-name">Valentina Silva</h3>
+                <span class="testimonial-location">Santiago, CL</span>
+              </div>
+            </div>
+            <p class="testimonial-text">Ya no desperdicio comida. La lista de la compra es genial; ahorré muchísimo este mes.</p>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+
+        <!-- Testimonio 5 -->
+        <div class="reveal testimonial-card">
+          <div>
+            <div class="testimonial-header">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/c_fill,g_face,w_150,h_150/v1780779980/Captura_de_pantalla_2026-06-06_160231_ri38h7.png" alt="Lucía Fernández" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <h3 class="testimonial-name">Lucía Fernández</h3>
+                <span class="testimonial-location">Lima, PE</span>
+              </div>
+            </div>
+            <p class="testimonial-text">Soy intolerante a la lactosa y las recetas que he marcado me han facilitado mucho la vida.</p>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+
+        <!-- Testimonio 6 -->
+        <div class="reveal testimonial-card">
+          <div>
+            <div class="testimonial-header">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/c_fill,g_face,w_150,h_150/v1780779982/Captura_de_pantalla_2026-06-06_160307_r5llh2.png" alt="Martina Gómez" class="testimonial-avatar" />
+              <div class="testimonial-info">
+                <h3 class="testimonial-name">Martina Gómez</h3>
+                <span class="testimonial-location">Buenos Aires, AR</span>
+              </div>
+            </div>
+            <p class="testimonial-text">Perdí 4 kg en un mes comiendo las recetas del libro. Saludable, práctico y delicioso.</p>
+          </div>
+          <div class="testimonial-stars">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================
+       SECCIÓN 7 — VALUE STACK + OFERTA
+       (Segundo CTA principal)
+  ======================================= -->
+  <section id="ofertas" style="padding: 80px 20px; background: var(--fondo);">
+    <div class="max-w-3xl">
+
+      <div style="background:var(--card);border:2px solid #22c55e;border-radius:28px;padding:clamp(28px,6vw,56px);position:relative;overflow:hidden;box-shadow:0 0 60px rgba(34,197,94,0.15);">
+
+        <!-- Cinta de urgencia -->
+        <div style="position:absolute;top:0;left:0;width:100%;background:#22c55e;color:#0a1f0b;text-align:center;padding:10px;font-size:0.75rem;font-weight:900;text-transform:uppercase;letter-spacing:0.12em;animation:pulse-opacity 2s infinite;">
+          ⏰ Oferta especial — precio sube pronto
+        </div>
+
+        <div class="text-center" style="margin-top:32px;">
+
+          <h2 style="font-size:clamp(1.6rem,4vw,2.5rem);font-weight:900;color:white;margin-bottom:32px;">Lo Que Te Llevas Hoy:</h2>
+
+          <!-- Value stack -->
+          <ul style="list-style:none;text-align:left;max-width:420px;margin:0 auto 32px;display:flex;flex-direction:column;gap:14px;">
+            <li style="display:flex;align-items:center;gap:12px;color:#d1fae5;">
+              <span style="color:#22c55e;font-size:1.2rem;flex-shrink:0;">✓</span>
+              <span><strong>Recetario Principal</strong> — +100 recetas saludables para congelar</span>
+            </li>
+            <li style="display:flex;align-items:center;gap:12px;color:#d1fae5;">
+              <span style="color:#22c55e;font-size:1.2rem;flex-shrink:0;">✓</span>
+              <span><strong>Bono 01:</strong> Plan de Viandas Inteligentes (Recetario de snacks congelables)</span>
+            </li>
+            <li style="display:flex;align-items:center;gap:12px;color:#d1fae5;">
+              <span style="color:#22c55e;font-size:1.2rem;flex-shrink:0;">✓</span>
+              <span><strong>Bono 02:</strong> Menús Semanales Listos</span>
+            </li>
+            <li style="display:flex;align-items:center;gap:12px;color:#d1fae5;">
+              <span style="color:#22c55e;font-size:1.2rem;flex-shrink:0;">✓</span>
+              <span><strong>Bono 03:</strong> Guía de Organización del Congelador</span>
+            </li>
+            <li style="display:flex;align-items:center;gap:12px;color:#d1fae5;">
+              <span style="color:#22c55e;font-size:1.2rem;flex-shrink:0;">✓</span>
+              <span>Acceso inmediato y de por vida desde cualquier dispositivo</span>
+            </li>
+          </ul>
+
+          <!-- Countdown -->
+          <div style="margin-bottom:28px;">
+            <h3 style="color:#ef4444;font-weight:800;font-size:1rem;margin-bottom:12px;text-transform:uppercase;letter-spacing:0.08em;">Esta oferta desaparece en:</h3>
+            <div class="countdown-timer">14:40</div>
+          </div>
+
+          <!-- Precio -->
+          <p style="color:#9ca3af;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:4px;">
+            Valor real: <span class="line-through" style="font-size:1.1rem;">$45 USD</span>
+          </p>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:clamp(4rem,12vw,6rem);font-weight:900;color:white;line-height:1;display:flex;align-items:flex-start;justify-content:center;gap:4px;margin-bottom:8px;">
+            <span style="font-size:clamp(1.8rem,5vw,2.8rem);margin-top:12px;color:#22c55e;">$</span>6.95
+          </div>
+          <p style="color:#22c55e;font-weight:700;font-size:0.9rem;margin-bottom:28px;text-transform:uppercase;letter-spacing:0.08em;">Dólares — pago único — sin suscripción</p>
+
+          <!-- CTA PRINCIPAL -->
+          <a href="https://pay.hotmart.com/Q106162359I?off=qvpht1hm&checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-primary" id="cta-2" style="font-size:1.3rem;padding:22px 32px;">
+            🔥 Quiero Mis +100 Recetas Ahora
+          </a>
+
+          <!-- Sellos de confianza -->
+          <div style="margin-top:20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px;color:#6b7280;font-size:0.78rem;">
+            <span style="display:flex;align-items:center;gap:6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
+              Pago 100% Seguro
+            </span>
+            <span style="display:flex;align-items:center;gap:6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+              Garantía 7 días
+            </span>
+            <span style="display:flex;align-items:center;gap:6px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+              Acceso inmediato
+            </span>
+          </div>
+
+          <p style="margin-top:12px;font-size:0.75rem;color:#6b7280;font-style:italic;">Recibes el acceso en tu correo en menos de 1 minuto tras el pago.</p>
+
+        </div>
+      </div>
+
+      <!-- Bonos visuales -->
+      <div style="margin-top:48px;">
+        <h3 class="text-center reveal" style="font-size:1.4rem;font-weight:800;color:white;margin-bottom:28px;">🎁 Tus 3 Bonos Incluidos:</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+
+          <div class="card reveal" style="text-align:center;">
+            <div style="border-radius:12px;overflow:hidden;margin-bottom:14px;aspect-ratio:4/3;">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1780778550/bonus_-_1_tda7x8.webp" alt="Plan de Viandas Inteligentes" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <span style="color:#ea580c;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">Bono 01</span>
+            <p style="color:white;font-weight:700;font-size:0.95rem;margin-top:6px;">Plan de Viandas Inteligentes</p>
+            <p style="color:#6b7280;font-size:0.78rem;margin-top:4px;line-height:1.5;">Una colección de deliciosos snacks saludables, listos para congelar y tener siempre a mano.</p>
+          </div>
+
+          <div class="card reveal" style="text-align:center;">
+            <div style="border-radius:12px;overflow:hidden;margin-bottom:14px;aspect-ratio:4/3;">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1780778548/bonus_-_2_rzpsyx.webp" alt="Menús Semanales Listos" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <span style="color:#ea580c;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">Bono 02</span>
+            <p style="color:white;font-weight:700;font-size:0.95rem;margin-top:6px;">Menús Semanales Listos</p>
+            <p style="color:#6b7280;font-size:0.78rem;margin-top:4px;line-height:1.5;">Planificación completa para toda la semana. Sin estrés ni complicaciones.</p>
+          </div>
+
+          <div class="card reveal" style="text-align:center;">
+            <div style="border-radius:12px;overflow:hidden;margin-bottom:14px;aspect-ratio:4/3;">
+              <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1780778547/bonus-_3_l4s8v5.webp" alt="Guía de Organización del Congelador" style="width:100%;height:100%;object-fit:cover;" />
+            </div>
+            <span style="color:#ea580c;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;">Bono 03</span>
+            <p style="color:white;font-weight:700;font-size:0.95rem;margin-top:6px;">Guía de Organización del Congelador</p>
+            <p style="color:#6b7280;font-size:0.78rem;margin-top:4px;line-height:1.5;">El método paso a paso para ordenar y clasificar tu freezer, optimizar espacio y conservar todo fresco.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================
+       SECCIÓN 8 — FAQ (Destrucción de objeciones)
+  ======================================= -->
+  <section style="padding: 80px 20px; background: #0b1510; border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="max-w-3xl">
+
+      <h2 class="text-center reveal" style="font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;color:white;margin-bottom:40px;">
+        Preguntas frecuentes
+      </h2>
+
+      <div style="display:flex;flex-direction:column;gap:12px;">
+
+        <div class="faq-item reveal" style="border:1px solid rgba(255,255,255,0.08);background:var(--card);border-radius:14px;overflow:hidden;">
+          <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px;text-align:left;font-weight:700;color:white;background:none;border:none;cursor:pointer;font-size:0.95rem;font-family:'Inter',sans-serif;transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='white'">
+            ¿Las recetas son para principiantes?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">Sí, completamente. Todas las recetas están explicadas paso a paso, con ingredientes fáciles de conseguir en cualquier supermercado. No necesitas experiencia previa.</div>
+        </div>
+
+        <div class="faq-item reveal" style="border:1px solid rgba(255,255,255,0.08);background:var(--card);border-radius:14px;overflow:hidden;">
+          <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px;text-align:left;font-weight:700;color:white;background:none;border:none;cursor:pointer;font-size:0.95rem;font-family:'Inter',sans-serif;transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='white'">
+            ¿Necesito recipientes especiales para congelar?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">No. Puedes usar cualquier recipiente hermético apto para congelador, de vidrio o plástico libre de BPA. Lo que ya tienes en casa funciona perfectamente.</div>
+        </div>
+
+        <div class="faq-item reveal" style="border:1px solid rgba(255,255,255,0.08);background:var(--card);border-radius:14px;overflow:hidden;">
+          <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px;text-align:left;font-weight:700;color:white;background:none;border:none;cursor:pointer;font-size:0.95rem;font-family:'Inter',sans-serif;transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='white'">
+            ¿Cuánto tiempo se conservan las comidas en el congelador?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">Aplicando las técnicas del recetario, tus comidas mantienen sabor, textura y valor nutricional entre 1 y 3 meses en el congelador.</div>
+        </div>
+
+        <div class="faq-item reveal" style="border:1px solid rgba(255,255,255,0.08);background:var(--card);border-radius:14px;overflow:hidden;">
+          <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px;text-align:left;font-weight:700;color:white;background:none;border:none;cursor:pointer;font-size:0.95rem;font-family:'Inter',sans-serif;transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='white'">
+            ¿Cómo recibo el acceso tras el pago?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">Inmediatamente. En menos de 1 minuto tras el pago recibes un correo con el enlace de acceso a través de la plataforma Hotmart. Disponible desde cualquier dispositivo.</div>
+        </div>
+
+        <div class="faq-item reveal" style="border:1px solid rgba(255,255,255,0.08);background:var(--card);border-radius:14px;overflow:hidden;">
+          <button onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;padding:20px;text-align:left;font-weight:700;color:white;background:none;border:none;cursor:pointer;font-size:0.95rem;font-family:'Inter',sans-serif;transition:color 0.2s;" onmouseover="this.style.color='#22c55e'" onmouseout="this.style.color='white'">
+            ¿Qué pasa si no me convence?
+            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">Tienes 7 días de garantía incondicional. Si el recetario no cumple tus expectativas, solicita el reembolso desde Hotmart o por correo y te devolvemos el 100% de tu dinero. Sin preguntas.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================
+       SECCIÓN 9 — URGENCIA FINAL + CTA 3
+  ======================================= -->
+  <section style="padding: 80px 20px; background: #050d06; border-top: 1px solid rgba(34,197,94,0.2); position:relative; overflow:hidden;">
+
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:radial-gradient(ellipse at center, rgba(34,197,94,0.06) 0%, transparent 70%);pointer-events:none;"></div>
+
+    <div class="max-w-2xl text-center" style="position:relative;z-index:2;">
+
+      <h2 class="reveal" style="font-size:clamp(1.8rem,5vw,3rem);font-weight:900;color:white;margin-bottom:16px;">
+        Esta oferta desaparece en:
+      </h2>
+
+      <div class="countdown-timer reveal" style="margin-bottom:32px;">14:40</div>
+
+      <p class="reveal" style="color:#a8b5a9;font-size:1rem;margin-bottom:36px;line-height:1.6;max-width:420px;margin-left:auto;margin-right:auto;">
+        Más de 100 recetas, 3 bonos y acceso de por vida — todo por <strong style="color:#22c55e;">$6.95 USD</strong>. Precio sube pronto.
+      </p>
+
+      <div class="reveal" style="max-width:400px;margin:0 auto;">
+        <a href="https://pay.hotmart.com/Q106162359I?off=qvpht1hm&checkoutMode=10" target="_blank" rel="noopener noreferrer" class="btn-primary" id="cta-3" style="font-size:1.15rem;">
+          🔥 Obtener Acceso Ahora — $6.95 USD
+        </a>
+        <p style="margin-top:12px;font-size:0.75rem;color:#6b7280;">Garantía 7 días · Acceso inmediato · Pago único</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer style="background:#020805;padding:28px 20px;text-align:center;border-top:1px solid rgba(255,255,255,0.04);">
+    <p style="color:#374151;font-size:0.75rem;margin-bottom:8px;">© 2026 Recetas Saludables Para Congelar — Todos los derechos reservados.</p>
+    <p style="color:#374151;font-size:0.7rem;max-width:480px;margin:0 auto;line-height:1.6;">Este sitio no forma parte de Facebook ni de Facebook Inc. Adicionalmente, este sitio no está respaldado por Facebook de ninguna manera. FACEBOOK es una marca comercial de FACEBOOK, Inc.</p>
+  </footer>
+
+
+  <!-- ======================================
+       SCRIPTS
+  ======================================= -->
+  <script>
+    // --- PARAMETER TRACKING (fbclid + src → Hotmart) ---
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const fbclid = urlParams.get("fbclid");
+      const src = urlParams.get("src");
+      if (fbclid || src) {
+        document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(link => {
+          try {
+            const url = new URL(link.href);
+            if (fbclid) url.searchParams.set("fbclid", fbclid);
+            if (src) url.searchParams.set("src", src);
+            link.href = url.toString();
+          } catch (e) {}
+        });
+      }
+    });
+
+    // --- CARRUSEL ---
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.c-slide');
+
+    function moveCarousel(dir) {
+      slides[currentSlide].className = 'c-slide ' + (dir === 1 ? 'hidden-left' : 'hidden-right');
+      currentSlide = (currentSlide + dir + slides.length) % slides.length;
+      slides[currentSlide].className = 'c-slide active';
+    }
+
+    // Auto-avance del carrusel cada 3s
+    setInterval(() => moveCarousel(1), 3000);
+
+    // --- COUNTDOWN TIMER ---
+    function startCountdown() {
+      const timers = document.querySelectorAll('.countdown-timer');
+      if (!timers.length) return;
+
+      // Persistir el timer en sessionStorage
+      const key = 'recetas_timer';
+      let saved = sessionStorage.getItem(key);
+      let totalSeconds = saved ? parseInt(saved) : (14 * 60) + 40;
+
+      const update = () => {
+        const m = Math.floor(totalSeconds / 60);
+        const s = totalSeconds % 60;
+        const str = `${m}:${s < 10 ? '0' : ''}${s}`;
+        timers.forEach(t => t.textContent = str);
+        sessionStorage.setItem(key, totalSeconds);
+        if (totalSeconds > 0) totalSeconds--;
+      };
+
+      update();
+      setInterval(update, 1000);
+    }
+    document.addEventListener('DOMContentLoaded', startCountdown);
+
+    // --- COUNT UP ---
+    const countUpObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target);
+        let current = 0;
+        const step = Math.ceil(target / 40);
+        const interval = setInterval(() => {
+          current = Math.min(current + step, target);
+          el.textContent = current;
+          if (current >= target) clearInterval(interval);
+        }, 40);
+        countUpObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.count-up').forEach(el => countUpObserver.observe(el));
+
+    // --- FAQ ---
+    function toggleFaq(btn) {
+      const item = btn.parentElement;
+      const isActive = item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+      if (!isActive) item.classList.add('active');
+    }
+
+    // --- SCROLL REVEAL ---
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  </script>
+
+</body>
+</html>
