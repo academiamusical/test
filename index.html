@@ -895,89 +895,23 @@
         }
     </style>
 
-    <!-- TRACKER DE ATRIBUCIÓN HYBRID CAPI -->
+    <!-- Meta Pixel Code -->
     <script>
-    (function() {
-      const CONFIG = {
-        campaignSlug: "partituras-test",
-        backendUrl: "https://ehdhbaytbbxqmgauiloh.supabase.co/functions/v1/tracker-api",
-        pixelId: "1545899793926405",
-        testEventCode: "" // Opcional: Escribe aquí tu token de prueba de Meta si vas a debuggear
-      };
-
-      if(!window.fbq){
-        !(function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)})(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', CONFIG.pixelId);
-      }
-
-      function getCookie(n){const v=`; ${document.cookie}`;const p=v.split(`; ${n}=`);if(p.length===2)return p.pop().split(';').shift();return null}
-      function setCookie(n,v,d=30){const date=new Date();date.setTime(date.getTime()+(d*24*60*60*1000));document.cookie=`${n}=${v}; expires=${date.toUTCString()}; path=/; SameSite=Lax; Secure`}
-      function genUUID(){return "evt_"+Date.now()+"_"+Math.random().toString(36).substr(2,9)}
-      function getOrGenFBP(){let f=getCookie('_fbp');if(!f){const r=Math.floor(Math.random()*2147483647);f=`fb.1.${Date.now()}.${r}`;setCookie('_fbp',f)}return f}
-      function getOrGenFBC(){let f=getCookie('_fbc');const u=new URLSearchParams(window.location.search);const c=u.get('fbclid');if(c){f=`fb.1.${Date.now()}.${c}`;setCookie('_fbc',f)}return f}
-      function getOrGenExtId(){let e=localStorage.getItem('track_external_id');if(!e){e="ext_"+Math.random().toString(36).substr(2,12);localStorage.setItem('track_external_id',e)}return e}
-
-      const utms={};
-      ["utm_source","utm_medium","utm_campaign","utm_content","utm_term"].forEach(p=>{
-        const v=new URLSearchParams(window.location.search).get(p);
-        if(v){utms[p]=v;localStorage.setItem('track_'+p,v)}else{utms[p]=localStorage.getItem('track_'+p)||""}
-      });
-
-      function getSessionSrc(){
-        const u=new URLSearchParams(window.location.search);
-        const s=u.get('src');
-        if(s){localStorage.setItem('track_src',s);return s}
-        return localStorage.getItem('track_src')||"";
-      }
-
-      const fbp=getOrGenFBP(), fbc=getOrGenFBC(), extId=getOrGenExtId(), sessionSrc=getSessionSrc();
-
-      async function fireEvent(name, id, val=0, cur="USD"){
-        const cData={}; if(val>0){cData.value=val;cData.currency=cur}
-        fbq('track', name, cData, {eventID: id});
-        try {
-          await fetch(CONFIG.backendUrl+'/track',{
-            method:'POST',
-            headers:{'Content-Type':'application/json'},
-            body:JSON.stringify({
-              campaign_slug:CONFIG.campaignSlug, event_name:name, event_id:id,
-              fbp, fbc, external_id:extId, utm_source:utms.utm_source,
-              utm_medium:utms.utm_medium, utm_campaign:utms.utm_campaign,
-              utm_content:utms.utm_content, utm_term:utms.utm_term,
-              value:val, currency:cur, test_event_code:CONFIG.testEventCode
-            })
-          });
-        } catch(e){}
-      }
-
-      fireEvent("PageView", genUUID());
-
-      function bindHotmart(){
-        document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach(link=>{
-          if(link.dataset.trackingBound) return;
-          link.dataset.trackingBound="true";
-          link.addEventListener('click', function(e){
-            const chkId=genUUID();
-            fireEvent("InitiateCheckout", chkId);
-            const sckData = [CONFIG.campaignSlug, chkId, fbp||"", fbc||"", extId||"", utms.utm_source||"", utms.utm_medium||"", utms.utm_campaign||"", utms.utm_content||"", utms.utm_term||""];
-            const cleanSck = sckData.map(v=>String(v).replace(/\|/g,"-")).join("|");
-            try {
-              const u=new URL(this.href); 
-              u.searchParams.set('sck', cleanSck); 
-              if(!u.searchParams.has('src') && sessionSrc){
-                u.searchParams.set('src', sessionSrc);
-              }
-              this.href=u.toString();
-            }catch(err){}
-          });
-        });
-      }
-      
-      if(document.readyState==="loading") document.addEventListener("DOMContentLoaded", bindHotmart);
-      else bindHotmart();
-      new MutationObserver(bindHotmart).observe(document.body, {childList:true, subtree:true});
-    })();
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1022203556928918');
+    fbq('track', 'PageView');
     </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1022203556928918&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -985,7 +919,7 @@
     <header class="hero-section">
         <div class="container hero-container">
             <div class="hero-image-wrapper">
-                <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782772261/Hero-image_aodvpg.webp" alt="Chico tocando flauta dulce con tablet de partituras" class="hero-img animate-fade-in">
+                <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/Hero-image_aodvpg.webp" alt="Chico tocando flauta dulce con tablet de partituras" class="hero-img animate-fade-in">
             </div>
             <div class="hero-text-wrapper">
                 <h1 class="hero-title">160 Partituras para <span class="highlight-yellow">Flauta Dulce</span> Listas Para Usar. <br><span class="highlight-cyan">Estudio, Clase o Presentación.</span></h1>
@@ -1012,7 +946,7 @@
                 </div>
                 
                 <div class="benefits-center">
-                    <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782772261/segunda_sj9ycb.webp" alt="Profesor y alumno tocando flauta dulce" class="tablet-mockup-img">
+                    <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/segunda_sj9ycb.webp" alt="Profesor y alumno tocando flauta dulce" class="tablet-mockup-img">
                 </div>
 
                 <div class="benefits-col benefits-right">
@@ -1037,7 +971,7 @@
                 <!-- Card 1 -->
                 <div class="receive-card">
                     <div class="receive-img-wrapper">
-                        <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782778075/3_liij2v.webp" alt="PDF de Partituras de Flauta Dulce">
+                        <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/3_liij2v.webp" alt="PDF de Partituras de Flauta Dulce">
                     </div>
                     <div class="receive-info">
                         <h3 class="receive-card-title">🎼 PDF con +160 partituras de flauta dulce</h3>
@@ -1047,7 +981,7 @@
                 <!-- Card 2 -->
                 <div class="receive-card">
                     <div class="receive-img-wrapper">
-                        <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782778075/4_edhsck.webp" alt="Flautas dulces coloridas">
+                        <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/4_edhsck.webp" alt="Flautas dulces coloridas">
                     </div>
                     <div class="receive-info">
                         <h3 class="receive-card-title">🎶 Música clásica y popular latinoamericana</h3>
@@ -1057,7 +991,7 @@
                 <!-- Card 3 -->
                 <div class="receive-card">
                     <div class="receive-img-wrapper">
-                        <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782778076/5_j2yipz.webp" alt="Flauta dulce sobre partitura">
+                        <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/5_j2yipz.webp" alt="Flauta dulce sobre partitura">
                     </div>
                     <div class="receive-info">
                         <h3 class="receive-card-title">🎵 Obras internacionales y académicas</h3>
@@ -1067,7 +1001,7 @@
                 <!-- Card 4 -->
                 <div class="receive-card">
                     <div class="receive-img-wrapper">
-                        <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782778075/6_zikomr.webp" alt="Laptop con índice de partituras">
+                        <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/6_zikomr.webp" alt="Laptop con índice de partituras">
                     </div>
                     <div class="receive-info">
                         <h3 class="receive-card-title">📚 Material organizado por títulos</h3>
@@ -1117,7 +1051,7 @@
                 <div class="bonus-card">
                     <h3 class="bonus-card-title">🎁 Bono 1 – El Arte de la Flauta Dulce: Digitación y Técnica Básica (PDF)</h3>
                     <div class="bonus-img-wrapper">
-                        <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782778076/Bono-1_e2qlde.webp" alt="Bono 1: El Arte de la Flauta Dulce PDF">
+                        <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/Bono-1_e2qlde.webp" alt="Bono 1: El Arte de la Flauta Dulce PDF">
                     </div>
                     <div class="bonus-pricing">
                         <p class="before-price">ANTES USD $15.00</p>
@@ -1128,7 +1062,7 @@
                 <div class="bonus-card">
                     <h3 class="bonus-card-title">🎁 Bono 2 – Libreta Musical Digital</h3>
                     <div class="bonus-img-wrapper">
-                        <img src="https://res.cloudinary.com/daijidw3t/image/upload/v1782778076/bono-2_fqlnv6.webp" alt="Bono 2: Libreta Musical Digital PDF">
+                        <img src="https://cdn.jsdelivr.net/gh/Gabo-pixel20/test@main/bono-2_fqlnv6.webp" alt="Bono 2: Libreta Musical Digital PDF">
                     </div>
                     <div class="bonus-pricing">
                         <p class="before-price">ANTES USD $17.00</p>
@@ -1207,7 +1141,44 @@
     </footer>
 
     <script>
-        // El comportamiento de Hotmart se maneja mediante el tracker principal en el head
+        // ============================================================
+        // TRACKING: pasa fbclid y src de la URL actual a Hotmart
+        // Funciona en cualquier orden de parámetros y con cualquier combo
+        // ============================================================
+        (function () {
+            var BASE_URL = 'https://pay.hotmart.com/S106545292X?checkoutMode=10';
+
+            function getParam(name) {
+                var params = new URLSearchParams(window.location.search);
+                return params.get(name);
+            }
+
+            function buildHotmartUrl() {
+                var url = BASE_URL;
+                var fbclid = getParam('fbclid');
+                var src    = getParam('src');
+
+                if (fbclid) url += '&fbclid=' + encodeURIComponent(fbclid);
+                if (src)    url += '&src='    + encodeURIComponent(src);
+
+                return url;
+            }
+
+            function applyHotmartUrls() {
+                var finalUrl = buildHotmartUrl();
+                // Aplica a todos los botones/enlaces que apunten a Hotmart
+                document.querySelectorAll('[id="btn-hotmart"], a.btn-checkout').forEach(function (el) {
+                    el.setAttribute('href', finalUrl);
+                });
+            }
+
+            // Ejecutar cuando el DOM esté listo
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', applyHotmartUrls);
+            } else {
+                applyHotmartUrls();
+            }
+        })();
 
         // ============================================================
         // COUNTDOWN: 10 minutos, se reinicia en sessionStorage
